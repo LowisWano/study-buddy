@@ -1,12 +1,28 @@
+import DecksSection from "@/components/decks/decks-section"
 
-export default function Home() {
+export default function Page() {
+  const decks = [
+    {
+      title: "TOPCIT",
+      lastOpened: "2025-05-25",
+    },
+    {
+      title: "Philnits",
+      lastOpened: "2025-05-25",
+    },
+  ]
+  
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        
-        <div>hello world</div>
-      </main>
-      
+    <div className="flex flex-1 flex-col">
+      <div className="@container/main flex flex-1 flex-col gap-2">
+        <div>
+          <h1 className="text-2xl font-bold">Welcome Luis Andrei Ouano!</h1>
+          <p className="text-sm text-gray-500">
+            This is your dashboard.
+          </p>
+          <DecksSection decks={decks} />
+        </div>
+      </div>
     </div>
-  );
+  )
 }
