@@ -18,8 +18,9 @@ export default async function Page({
 }: {
   params: { deck: string }
 }) {
+  const { deck } = await params
   const decks = getDecks()
-  const currentDeck = decks.find(d => d.id === Number(params.deck))
+  const currentDeck = decks.find(d => d.id === Number(deck))
 
   if (!currentDeck) {
     return <div>Deck not found</div>
