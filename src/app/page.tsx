@@ -1,16 +1,8 @@
 import DecksSection from "@/components/decks/decks-section"
+import { getDecks } from "@/services/deck.service"
 
 export default function Page() {
-  const decks = [
-    {
-      title: "TOPCIT",
-      lastOpened: "2025-05-25",
-    },
-    {
-      title: "Philnits",
-      lastOpened: "2025-05-25",
-    },
-  ]
+  const decks = getDecks()
   
   return (
     <div className="flex flex-1 flex-col">

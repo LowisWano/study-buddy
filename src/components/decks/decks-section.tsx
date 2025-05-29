@@ -1,12 +1,10 @@
 import Deck from "./deck"
+import { Deck as DeckType } from "@/services/deck.service"
 
 export default function DecksSection({
   decks,
 }: {
-  decks: {
-    title: string,
-    lastOpened: string,
-  }[];
+  decks: DeckType[];
 }) {
   return (
     <div className="flex flex-row gap-4 m-4">

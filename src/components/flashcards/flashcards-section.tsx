@@ -9,7 +9,7 @@ export default function FlashcardsSection({
   }[]
 }){
   return (
-    <div>
+    <div className="flex flex-col gap-6">
       {
         flashcards.map((flashcard) => (
           <FlashCard key={flashcard.term} flashcard={flashcard}/>

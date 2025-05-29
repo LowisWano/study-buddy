@@ -1,0 +1,24 @@
+{
+  "topcit": {
+    "flashcards": [
+      {
+        "term": "Software Engineering",
+        "definition": "It is a discipline within computer science that focuses on the systematic and professional development, testing, and maintenance of software applications. "
+      },
+      {
+        "term": "Encryption",
+        "definition": "The process of converting plain text into a form (ciphertext) that cannot be recognized by a third party"
+      }
+    ],
+    "lastOpened": "2025-05-25"
+  },
+  "philnits": {
+    "flashcards": [
+      {
+        "term": "Philnitss",
+        "definition": "Damn. "
+      }
+    ],
+    "lastOpened": "2025-05-25"
+  }
+}

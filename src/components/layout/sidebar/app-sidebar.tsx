@@ -17,6 +17,7 @@ import {
   SearchIcon,
   SettingsIcon,
   UsersIcon,
+  Bookmark
 } from "lucide-react"
 
 import { NavDocuments } from "@/components/layout/sidebar/nav-documents"
@@ -42,9 +43,14 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "#",
+      url: "/",
       icon: LayoutDashboardIcon,
     },
+    {
+      title: "Saved",
+      url: "#",
+      icon: Bookmark
+    }
   ],
   navClouds: [
     {
@@ -150,7 +156,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavDocuments items={data.documents} />
+        {/* <NavDocuments items={data.documents} /> */}
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
