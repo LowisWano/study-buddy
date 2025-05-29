@@ -15,7 +15,7 @@ export default function Deck({ deck }: {
   deck: DeckType
 }) {
   return (
-    <Link href={`/${deck.title}`}>
+    <Link href={`/${deck.id}`}>
       <Card className="hover:ring-4 hover:ring-black transition-all relative">
         <CardHeader>
           <CardTitle>{deck.title}</CardTitle>

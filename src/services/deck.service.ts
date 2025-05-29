@@ -6,6 +6,7 @@ export interface Flashcard {
 }
 
 export interface Deck {
+  id: number;
   title: string;
   flashcards: Flashcard[];
   lastOpened: string;
@@ -13,6 +14,7 @@ export interface Deck {
 
 export function getDecks(): Deck[] {
   return Object.entries(data).map(([title, deck]) => ({
+    id: deck.id,
     title,
     flashcards: deck.flashcards,
     lastOpened: deck.lastOpened
