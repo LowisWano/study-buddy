@@ -15,10 +15,10 @@ export default function Deck({ deck }: {
   deck: DeckType
 }) {
   return (
-    <Link href={`/${deck.id}`}>
-      <Card className="hover:ring-4 hover:ring-black transition-all relative">
+    <Link href={`/${deck.id}`} className="block w-full">
+      <Card className="hover:ring-4 hover:ring-black transition-all relative w-full">
         <CardHeader>
-          <CardTitle>{deck.title}</CardTitle>
+          <CardTitle className="truncate">{deck.title}</CardTitle>
           <p>
             Last opened: {new Date(deck.lastOpened).toLocaleDateString("en-US", {
               month: "long",

@@ -1,3 +1,3 @@
 # todo
-- add subsections for each deck
+- add tags
 - add breadcrumbs

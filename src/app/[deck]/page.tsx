@@ -4,14 +4,14 @@ import { MoreVertical } from 'lucide-react'
 
 import {
   Card,
-  CardContent,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-
 import { Button } from "@/components/ui/button"
 
 import { getDecks } from "@/services/deck.service"
+
+import Link from "next/link"
 
 export default async function Page({
   params,
@@ -35,7 +35,9 @@ export default async function Page({
           </CardTitle>
 
           <div className="items-center flex justify-center">
-            <Button variant="outline">Edit Flashcards</Button>
+            <Link href={`/${deck}/edit`}>
+              <Button>Edit Flashcards</Button>
+            </Link>
             <button className="p-1 hover:bg-gray-100 rounded-full">
               <MoreVertical className="h-5 w-5" />
             </button>

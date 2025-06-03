@@ -1,31 +1,28 @@
 {
-  "TOPCIT": {
+  "Computer Science Fundamentals": {
     "id": 1,
     "flashcards": [
       {
-        "term": "Software Engineering",
-        "definition": "It is a discipline within computer science that focuses on the systematic and professional development, testing, and maintenance of software applications. "
+        "term": "JPEG",
+        "definition": "Compression format for color still images, or the name of the joint organization of ISO and ITU-T establishing this standard"
       },
       {
-        "term": "Encryption",
-        "definition": "The process of converting plain text into a form (ciphertext) that cannot be recognized by a third party"
-      }
-    ],
-    "lastOpened": "2025-05-25"
-  },
-  "Philnits": {
-    "id": 2,
-    "flashcards": [
+        "term": "PCM",
+        "definition": "Converting analog signals (sound, etc.) into digital signals"
+      },
       {
-        "term": "Philnitss",
-        "definition": "Damn. "
+        "term": "MIDI",
+        "definition": "Interface to connect a musical instrument with a computer"
+      },
+      {
+        "term": "Arithmetic shift",
+        "definition": "This type of shifting is used when data is handled as numeric data with a positive or negative sign; it is an operation of shifting a bit string, except for the sign bit, representing a fixed-point number. inserts a “0” in the rightmost place that has been made empty by the shift."
       }
+
     ],
-    "lastOpened": "2025-05-25"
-  },
-  "Luis": {
-    "id": 3,
-    "flashcards": [
+    "tags": [
+      "FE_Exam_Preperation_Book_VOL1",
+      "Chapter 1"
     ],
     "lastOpened": "2025-05-25"
   }
